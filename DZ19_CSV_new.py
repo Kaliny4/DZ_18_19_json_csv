@@ -6,7 +6,7 @@ import csv
 import json
 import random
 
-with open('../json_file.json') as f:
+with open('json_file.json') as f:
     data_for_csv = json.load(f)
 print('data_for_csv: ', data_for_csv)
 
@@ -36,7 +36,7 @@ while index < len(person):
     person[index].insert(4, num_list[index])
     index += 1
 print('final: ', person)
-with open('../file_csv.csv', mode='w', encoding='utf-8', newline='') as f:
+with open('file_csv.csv1', mode='w', encoding='utf-8', newline='') as f:
     file_writer = csv.writer(f)
     file_writer.writerow(name_of_fields)
     for item in person:

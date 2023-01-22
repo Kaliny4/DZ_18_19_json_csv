@@ -36,7 +36,7 @@ while index < len(person):
     person[index].insert(4, num_list[index])
     index += 1
 print('final: ', person)
-with open('file_csv.csv1', mode='w', encoding='utf-8', newline='') as f:
+with open('file_csv1.csv', mode='w', encoding='utf-8', newline='') as f:
     file_writer = csv.writer(f)
     file_writer.writerow(name_of_fields)
     for item in person:
